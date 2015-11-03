@@ -24,7 +24,7 @@
       <td>sat</td>
     </table>
 
-    <div id="calendar-frame">
+    <div id="cal-frame">
       <table class="curr">
         <tbody>
           <tr><td class="nil"></td><td class="nil"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
@@ -37,7 +37,21 @@
     </div>
 
   </div>
+
+  <div id="events">
+
+  </div>
+
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="index.js"></script>
+  <script>
+
+   $(function() {
+     var calendar = Calendar();
+     calendar.init();
+     $('#label').trigger('click')
+   });
+
+  </script>
 </body>
 </html>
